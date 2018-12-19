@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-__author__ = 'Zhe Zhang'
+__author__ = 'Zhe Zhang test'
 
 '''
 async web application.
@@ -39,7 +39,7 @@ def init_jinja2(app, **kw):
         for name, f in filters.items():
             env.filters[name] = f
     app['__templating__'] = env
-
+     
 def datetime_filter(t):
     delta = int(time.time() - t)
     if delta < 60:
