@@ -6,8 +6,7 @@
     <ProjectGuid>e5806602-6333-44c1-833d-c092141606dd</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <ProjectTypeGuids>{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
-    <StartupFile>
-    </StartupFile>
+    <StartupFile>www\app.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -27,6 +26,83 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="backup\" />
+    <Folder Include="conf\" />
+    <Folder Include="dist\" />
+    <Folder Include="ios\" />
+    <Folder Include="LICENSE\" />
+    <Folder Include="www\" />
+    <Folder Include="www\static\css\" />
+    <Folder Include="www\static\css\addons\" />
+    <Folder Include="www\static\fonts\" />
+    <Folder Include="www\static\img\" />
+    <Folder Include="www\static\js\" />
+    <Folder Include="www\templates\" />
+    <Folder Include="www\static\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="www\apis.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="www\app.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="www\config.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="www\config_default.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="www\config_override.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="www\coroweb.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="www\handlers.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="www\markdown2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="www\model.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="www\orm.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="www\pymonitor.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="www\static\css\addons\uikit.addons.min.css" />
+    <Content Include="www\static\css\addons\uikit.almost-flat.addons.min.css" />
+    <Content Include="www\static\css\addons\uikit.gradient.addons.min.css" />
+    <Content Include="www\static\css\awesome.css" />
+    <Content Include="www\static\css\uikit.almost-flat.min.css" />
+    <Content Include="www\static\css\uikit.gradient.min.css" />
+    <Content Include="www\static\css\uikit.min.css" />
+    <Content Include="www\static\fonts\fontawesome-webfont.eot" />
+    <Content Include="www\static\fonts\fontawesome-webfont.ttf" />
+    <Content Include="www\static\fonts\fontawesome-webfont.woff" />
+    <Content Include="www\static\fonts\FontAwesome.otf" />
+    <Content Include="www\static\img\user.png" />
+    <Content Include="www\static\js\awesome.js" />
+    <Content Include="www\static\js\jquery.min.js" />
+    <Content Include="www\static\js\sha1.min.js" />
+    <Content Include="www\static\js\sticky.min.js" />
+    <Content Include="www\static\js\uikit.min.js" />
+    <Content Include="www\static\js\vue.min.js" />
+    <Content Include="www\templates\blog.html" />
+    <Content Include="www\templates\blogs.html" />
+    <Content Include="www\templates\manage_blogs.html" />
+    <Content Include="www\templates\manage_blog_edit.html" />
+    <Content Include="www\templates\manage_comments.html" />
+    <Content Include="www\templates\manage_users.html" />
+    <Content Include="www\templates\register.html" />
+    <Content Include="www\templates\signin.html" />
+    <Content Include="www\templates\__base__.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
